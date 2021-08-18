@@ -11,13 +11,12 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import streamlit as st
 import base64
-import chromedriver_binary
 
 chrome_options = Options()
 chrome_options.add_argument("--headless", )
 
 def scraping(URL):
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome(executable_path='/driver/chromedriver',options=chrome_options)
     url = URL
     browser.get(url)
 
