@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import streamlit as st
 import base64
+import chromedriver_binary
 
 chrome_options = Options()
 chrome_options.add_argument("--headless", )
