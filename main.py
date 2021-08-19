@@ -17,7 +17,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless", )
 
 def scraping(URL):
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome('chromedriver',options=chrome_options)
     url = URL
     browser.get(url)
 
